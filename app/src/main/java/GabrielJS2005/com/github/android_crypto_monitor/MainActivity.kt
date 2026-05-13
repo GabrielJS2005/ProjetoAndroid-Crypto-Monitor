@@ -1,13 +1,12 @@
-package carreiras.com.github.cryptomonitor
+package GabrielJS2005.com.github.android_crypto_monitor
 
-import GabrielJS2005.com.github.android_crypto_monitor.R
+import GabrielJS2005.com.github.android_crypto_monitor.service.MercadoBitcoinServiceFactory
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
-import carreiras.com.github.cryptomonitor.service.MercadoBitcoinServiceFactory
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -19,6 +18,7 @@ import java.util.Locale
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         setContentView(R.layout.activity_main)
 
         // Configurando a toolbar
@@ -30,6 +30,7 @@ class MainActivity : AppCompatActivity() {
         btnRefresh.setOnClickListener {
             makeRestCall()
         }
+
     }
 
     private fun configureToolbar(toolbar: Toolbar) {
@@ -37,6 +38,7 @@ class MainActivity : AppCompatActivity() {
         toolbar.setTitleTextColor(getColor(R.color.white))
         supportActionBar?.setTitle(getText(R.string.app_title))
         supportActionBar?.setBackgroundDrawable(getDrawable(R.color.primary))
+
     }
 
     private fun makeRestCall() {
@@ -80,4 +82,5 @@ class MainActivity : AppCompatActivity() {
             }
         }
     }
+
 }

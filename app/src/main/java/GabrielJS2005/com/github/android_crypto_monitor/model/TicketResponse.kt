@@ -1,4 +1,4 @@
-package carreiras.com.github.cryptomonitor.model
+package GabrielJS2005.com.github.android_crypto_monitor.model
 
 class TickerResponse(
     val ticker: Ticker

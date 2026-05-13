@@ -1,6 +1,6 @@
-package carreiras.com.github.cryptomonitor.service
+package GabrielJS2005.com.github.android_crypto_monitor.service
 
-import carreiras.com.github.cryptomonitor.model.TickerResponse
+import GabrielJS2005.com.github.android_crypto_monitor.model.TickerResponse
 import retrofit2.Response
 import retrofit2.http.GET
 

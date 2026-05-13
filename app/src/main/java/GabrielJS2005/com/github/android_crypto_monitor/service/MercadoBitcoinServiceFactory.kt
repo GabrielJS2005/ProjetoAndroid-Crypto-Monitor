@@ -1,4 +1,4 @@
-package carreiras.com.github.cryptomonitor.service
+package GabrielJS2005.com.github.android_crypto_monitor.service
 
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
